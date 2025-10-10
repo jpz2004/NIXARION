@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Nixarion Colombia</title>
+  <meta name="description" content="Descubre Nixarion Colombia: moda futurista, prendas premium y estilo exclusivo. Compra online y lleva tu estilo al siguiente nivel.">
+  <meta name="keywords" content="Nixarion, ropa, moda, Colombia, premium">
+  <meta name="author" content="Nixarion Colombia">
+  <link rel="icon" href="Nixarion_libre_blanco_16x16.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="inicio.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>   
+  
+  <header>
+    <h1>
+      <a href="Inicio.html" class="titulo-link">NIXARION</a>
+    </h1>
+    <nav class="nav" role="navigation" aria-label="Menú principal">
+      <ul class="menu">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Coleccion.html">Coleccion</a></li>
+        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+        <li class="carrito">
+          <a href="TuCarrito.html" aria-label="ver carrito">
+            <img class="carrito-logo" src="Carrito_negro.png" alt="Icono carrito de compras" width="40" height="40">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bienvenida" class="bienvenida">
+      <h1><em>✨ BIENVENIDO A NIXARION ✨</em></h1>
+      <p><em>Tienda exclusiva online</em></p>
+      <p>Aquí creemos que cada persona es un universo único, y la ropa es mucho más que tela: es un lenguaje, 
+        una declaración, una armadura. Nuestra visión es clara: inspirarte a vivir con coraje, con autenticidad y con un estilo que hable por ti. 
+        Porque el mundo no se conquista siguiendo pasos, sino creando los tuyos propios. 
+        En cada prenda hallarás exclusividad, un sello de calidad que perdura y un confort que te acompaña en cada reto. 
+        NIXARION no viste tu cuerpo, viste tu historia. Y esa historia apenas comienza contigo.</p>
+    </section>
+
+    <section id="novedades" class="novedades">
+      <h2>🤯 ¡¡NOVEDADES NIXARION!! 🤯</h2>
+      <p>
+      ✨ Presentamos la <strong>Camiseta Edición Polo</strong>: un balance perfecto entre estilo y resistencia. 
+      Confeccionada en <strong>65% Poliéster</strong> y <strong>35% Algodón</strong>, ofrece frescura, comodidad y durabilidad. 
+      Una prenda exclusiva pensada para quienes buscan marcar la diferencia en cada detalle. 🚀
+      </p>
+      
+      <div class="producto-destacado">
+        <div class="novedades-izquierda">
+          <div class="imagen-con-brillo">
+          <img class="novedades-img" src="camisa_nix.png" alt="Prenda destacada" width="200" height="auto">
+          </div>
+          <p>Camiseta edición limitada - Mundo Futurista</p>
+          <a href="Coleccion.html" class="btn">ver</a>        
+        </div>
+    </section>
+
+    <section id="testimonios">
+    
+    <h2 style="box-sizing:border-box ;color:#000000; font-size:32px;font-style: italic; line-height: 25.6px;font-weight: 700; font-family:'Times New Roman', Times, serif; text-align:center;">🙋🏻 Lo que dicen los nuestros clientes 🙋🏻‍♀️</h2> 
+
+    <div class="testimonios-grid">
+        
+        <article class="stack">
+            <div class="card">
+              <div class="card-info">
+                <p>“La IA me recomendó una prenda perfecta para mi estilo, fue muy fácil comprar.” <br><br><strong><em>Laura M. 🙋🏻‍♀️</em></strong></p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="stack">
+            <div class="card">
+              <div class="card-info">
+                <p>“Me encantó la experiencia, diferente a cualquier otra tienda online.” <br><br><strong><em>Carlos G. 🙋🏻</em></strong></p>
+              </div>
+            </div>
+        </article>
+        
+        <article class="stack">
+            <div class="card">
+              <div class="card-info"></div>
+                <p>“Sencillo, rápido y con prendas exclusivas. Totalmente recomendado.” <br><br><strong><em>Andrea P. 🙋🏻‍♀️</em></strong></p>
+              </div>
+            </div>
+        </article>
+
+    </div>
+    </section>
+
+      <section id="comentarios" class="comentarios">
+    <h2>📝 Agrega tu comentario</h2>
+    <form action="#" method="post" class="form-comentario">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+
+      <label for="comentario">Comentario:</label><br>
+      <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe tu comentario aquí..." required></textarea><br><br>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+  </main>
+
+<!-- CHATBOT NIXBOT -->
+<div id="chat-widget">
+  <div id="chat-toggle">
+    <img src="nix_bot_gif.gif" alt="NixBot asistente virtual">
+  </div>
+
+  <div id="chat-box">
+    <div id="chat-messages">
+      <div class="message bot">
+        <strong>NixBot:</strong> ¡Bienvenid@! Soy tu asistente de moda virtual. Espero estés muy bien 😉 <br><br>
+        Escribe <b>"Hola"</b> para iniciar tu recomendación.
+      </div>
+    </div>
+
+    <div id="chat-input">
+      <input type="text" id="user-input" placeholder="Escribe tu pregunta...">
+      <button id="send-btn">Enviar</button>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="fin">
+    <button class="btn-ingreso" onclick="window.location.href='index.html'">Volver a ingreso</button>
+    <p>&copy; 2025 Nixarion Colombia.</p>
+    <a target="_blank" href="https://www.instagram.com/nixarion_?utm_source=ig_web_button_share_sheet&igsh=cjRyNHVycGQyNHl6">
+        <img class="footer-logo" src="Instagram_libre.png" alt="Instagram" width="30" height="30">
+    </a> 
+  </footer>  
+
+  <script src="nixbot.js" defer></script>
+</body>
+</html>

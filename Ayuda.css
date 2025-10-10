@@ -1,0 +1,127 @@
+/* ======== ESTILOS GENERALES ======== */
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+main section {
+  background: #00c3ff92;
+  border: 1px solid #0037ff8d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 21, 255, 0.524);
+  transition: transform 0.2s ease;
+}
+
+main section:hover {
+  transform: translateY(-3px);
+}
+
+
+#faq {
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: "Poppins", sans-serif;
+}
+
+#faq h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+#faq ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#faq li {
+  margin-bottom: 1rem;
+  border: 1px solid #00aeff8b;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0004ff85;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Pregunta */
+.faq-question {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 1rem;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Respuesta oculta */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 1rem;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* Estado abierto */
+.faq-question.active::after {
+  content: "-";
+  transform: rotate(180deg);
+}
+
+.faq-answer.show {
+  max-height: 200px; 
+  padding: 1rem;
+}
+
+#seguridad {
+  background: linear-gradient(180deg, #00bbffa8, #262affa1);
+  color: #000000;
+  text-align: center;
+}
+
+#seguridad h2 {
+  color: #000000;
+}
+
+#seguridad p {
+  font-size: 1.1rem;
+}
+
+/* ======== Contacto ======== */
+#contacto p {
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+#contacto a {
+  color: #2200ff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#contacto a:hover {
+  color: #666;
+}

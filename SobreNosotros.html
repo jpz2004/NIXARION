@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Nixarion </title>
+    <meta name="description" content="Conoce la historia de Nixarion, una marca de moda futurista creada en Colombia. Estilo, innovación y autenticidad.">
+    <meta name="keywords" content="Nixarion, historia, sobre nosotros, moda, Colombia, ropa exclusiva">
+    <meta name="author" content="Nixarion Colombia">
+    <link rel="icon" href="Nixarion_libre_blanco_16x16.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="SobreNosotros.css">
+    <script src="main.js" defer></script>
+    <script src="SobreNosotros.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="Inicio.html" class="titulo-link">Nixarion Ropa Exclusiva - Sobre Nosotros</a>
+    </h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Coleccion.html">Coleccion</a></li>
+        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+        <li class="carrito">
+          <a href="TuCarrito.html">
+            <img class="carrito-logo" src="Carrito_negro.png" alt="Icono carrito de compras" width="40" height="40">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<main class="sobre-nosotros">
+  <h1 class="titulo-seccion">✨ Sobre Nosotros ✨</h1>
+  
+  <div class="nosotros-grid">
+    <article class="card" data-card="historia">
+      <h2>Nuestra Historia</h2>
+      <p>Nixarion nació de un sueño: transformar la moda en un lienzo donde cada persona pueda escribir su propia historia...</p>
+    </article>
+
+    <article class="card" data-card="mision">
+      <h2>Nuestra Misión</h2>
+      <p>Buscamos ofrecer prendas únicas que transmitan seguridad y carácter...</p>
+    </article>
+
+    <article class="card" data-card="valores">
+      <h2>Nuestros Valores</h2>
+      <p>Creatividad, calidad, pasión y compromiso son pilares en cada prenda...</p>
+    </article>
+
+    <article class="card" data-card="filosofia">
+      <h2>Nuestra Filosofía</h2>
+      <p>Creemos que la moda no se trata de seguir tendencias, sino de crearlas...</p>
+    </article>
+  </div>
+</main>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="cerrar">&times;</span>
+    <div id="modal-text"></div>
+  </div>
+</div>
+
+<!-- CHATBOT NIXBOT -->
+<div id="chat-widget">
+  <div id="chat-toggle">
+    <img src="nix_bot_gif.gif" alt="NixBot asistente virtual">
+  </div>
+
+  <div id="chat-box">
+    <div id="chat-messages">
+      <div class="message bot">
+        <strong>NixBot:</strong> ¡Bienvenid@! Soy tu asistente de moda virtual. Espero estés muy bien 😉 <br><br>
+        Escribe <b>"Hola"</b> para iniciar tu recomendación.
+      </div>
+    </div>
+
+    <div id="chat-input">
+      <input type="text" id="user-input" placeholder="Escribe tu pregunta...">
+      <button id="send-btn">Enviar</button>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="fin">
+    <p>&copy; 2025 Nixarion Colombia.</p>
+    <a target="_blank" href="https://www.instagram.com/nixarion_?utm_source=ig_web_button_share_sheet&igsh=cjRyNHVycGQyNHl6">
+        <img class="footer-logo" src="Instagram_libre.png" alt="Instagram" width="30" height="30">
+    </a>
+  </footer>
+
+  <script src="nixbot.js" defer></script>
+</body>
+</html>

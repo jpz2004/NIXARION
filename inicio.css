@@ -1,0 +1,247 @@
+/* Novedades */
+.producto-destacado {
+    display: flex;
+    justify-content: space-around; /* Mejor balance que space-between */
+    align-items: center;
+    width: 100%; /* Ocupa el ancho completo del contenedor 'main' */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    flex-wrap: wrap; /* Esencial para la responsividad */
+    gap: 30px; /* Espacio entre los bloques */
+}
+
+.novedades-izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-basis: 45%; /* Bases más equitativas */
+    min-width: 280px; /* Asegura que no se haga muy pequeño */
+}
+
+.novedades-derecha {
+    flex-basis: 40%; /* Bases más equitativas */
+    min-width: 200px;
+    display: flex;
+    justify-content: center; /* Centrar el botón */
+    align-items: center;
+}
+
+.novedades h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    /* Cambio: Usamos el borde transparente para evitar saltos de layout */
+    border: 2px solid transparent; 
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #00bcd4; /* Color de acento futurista */
+    color: #000;
+}
+
+/* img novedades */
+.novedades-izquierda {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.novedades-izquierda::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #ffffff,#0026fb, #ffffff, #0022ff, #ffffff, #0026fb);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.novedades-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Testimonios */
+
+#testimonios h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif; 
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color: #000000;
+}
+
+#testimonios {
+    padding: 50px 0;
+}
+
+.testimonios-grid {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+
+.stack {
+    width: 100%; 
+    max-width: 300px; 
+    transition: 0.25s ease;
+    margin: 0; /
+}
+
+.stack:hover {
+    transform: rotate(2deg); 
+}
+
+.stack:hover .card:before {
+    transform: translatey(-2%) rotate(-3deg); 
+}
+
+.stack:hover .card:after {
+    transform: translatey(2%) rotate(3deg); 
+}
+
+.card {
+    aspect-ratio: 3 / 2;
+    border: 4px solid #002fff; 
+    box-shadow: 0 4px 10px rgba(0, 145, 255, 0.524);
+    background-color: #fff;
+    position: relative;
+    transition: 0.15s ease;
+    cursor: pointer;
+    padding: 10% 5%; 
+    text-align: center;
+}
+
+/* Boton */
+.btn-ingreso {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #000; 
+    color: #fff;
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(0, 188, 212, 0.4); 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-ingreso:hover {
+    background-color: #00e1ff; 
+    color: #000;
+    transform: scale(1.05); 
+}
+
+/* Formulario Comentarios */
+.comentarios {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #000dff; 
+}
+
+.comentarios h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #111;
+}
+
+.form-comentario {
+    display: flex;
+    gap: 15px; 
+    justify-content: center;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+}
+
+.form-group-input { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-comentario input,
+.form-comentario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 250px; 
+}
+
+.form-comentario textarea {
+    resize: vertical; 
+    min-height: 100px;
+    max-width: 300px;
+}
+
+.form-comentario .btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-comentario .btn:hover {
+    background-color: #005eff;
+    color: #000;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDAD DEL FORMULARIO */
+@media (max-width: 600px) {
+    .form-comentario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-comentario input,
+    .form-comentario textarea {
+        max-width: 90vw; 
+    }
+
+    .form-comentario textarea {
+        min-height: 120px;
+    }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestra Colección | Nixarion</title>
+
+  <!-- Meta etiquetas SEO -->
+  <meta name="description" content="Descubre la colección exclusiva de Nixarion: moda futurista, prendas premium y estilo único.">
+  <meta name="keywords" content="Nixarion, colección, ropa, moda futurista, prendas premium, Colombia">
+  <meta name="author" content="Nixarion Colombia">
+
+  <!-- Icono -->
+  <link rel="icon" href="Nixarion_libre_blanco_16x16.png" type="image/png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="Coleccion.css">
+
+  <!-- Scripts -->
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>
+      <a href="Inicio.html" class="titulo-link">
+        Nixarion Ropa Exclusiva - Nuestra Colección
+      </a>
+    </h1>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Coleccion.html" class="activo">Colección</a></li>
+        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+        <li class="carrito">
+          <a href="TuCarrito.html">
+            <img class="carrito-logo" src="Carrito_negro.png" alt="Icono carrito de compras" width="40" height="40">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section id="coleccion">
+      <h2>🤩 Nuestra Colección 🤩</h2>
+
+      <section class="box-tallas">
+        <h3>📏 Guía de Tallas 📏</h3>
+
+  <!-- Hombres -->
+      <div class="tallas-bloque">
+        <h4>Hombres</h4>
+        <div class="tallas-grid">
+          <div><strong>S 🙋🏻📏</strong><br>Pecho: 88-94 cm<br>Altura: 1.60-1.70 m</div>
+          <div><strong>M 🙋🏻📏</strong><br>Pecho: 95-101 cm<br>Altura: 1.70-1.78 m</div>
+          <div><strong>L 🙋🏻📏</strong><br>Pecho: 102-108 cm<br>Altura: 1.78-1.85 m</div>
+          <div><strong>XL 🙋🏻📏</strong><br>Pecho: 109-115 cm<br>Altura: 1.85-1.90 m</div>
+        </div>
+      </div>
+
+      <!-- Mujeres -->
+      <div class="tallas-bloque">
+        <h4>Mujeres</h4>
+        <div class="tallas-grid">
+          <div><strong>S 🙋🏻‍♀️📏</strong><br>Busto: 80-86 cm<br>Altura: 1.55-1.65 m</div>
+          <div><strong>M 🙋🏻‍♀️📏</strong><br>Busto: 87-93 cm<br>Altura: 1.60-1.70 m</div>
+          <div><strong>L 🙋🏻‍♀️📏</strong><br>Busto: 94-100 cm<br>Altura: 1.65-1.75 m</div>
+          <div><strong>XL 🙋🏻‍♀️📏</strong><br>Busto: 101-107 cm<br>Altura: 1.70-1.80 m</div>
+        </div>
+      </div>
+    </section>
+
+      <div class="productos-container">
+
+        <!-- Producto 1 -->
+        <article class="producto" id="camiseta-futurista">
+          <div class="card">
+            <img src="camiseta1.png" alt="Camiseta futurista blanca con estampado">
+          </div>
+          <h3>Camiseta Futurista</h3>
+          <p>Algodon 70% - Poliester 30%</p>
+          <p>$80.000 COP</p>
+          <button onclick="agregarAlCarrito('Camiseta Futurista', 80000, 'camiseta1.png')">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="producto" id="camiseta-premium">
+          <div class="card">
+            <img src="camiseta2.png" alt="Camiseta negra premium con diseño exclusivo">
+          </div>
+          <h3>Camiseta Premium</h3>
+          <p>Algodon 50% Poliester 50%</p>
+          <p>$100.000 COP</p>
+          <button onclick="agregarAlCarrito('Camiseta Premium', 100000, 'camiseta2.png')">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="producto" id="camiseta-edicion-limitada">
+          <div class="card">
+            <img src="camiseta3.png" alt="Camiseta edición limitada con estampado minimalista">
+          </div>
+          <h3>Camiseta Edición Limitada</h3>
+          <p>Algodon 100%</p>
+          <p>$120.000 COP</p>
+          <button onclick="agregarAlCarrito('Camiseta Edición Limitada', 120000, 'camiseta3.png')">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <!--Producto 4-->
+        <article class="producto" id="camisa-polo">
+          <div class="card">
+            <img src="camisa_nix.png" alt="Nueva Coleccion Polo">
+          </div>
+          <h3>Camiseta Edición Polo</h3>
+          <p>Poliester 65% Algodon 35%</p>
+          <p>$150.000 COP</p>
+          <button onclick="agregarAlCarrito('Nueva Coleccion Polo', 150000, 'camisa_nix.png')">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <!-- Producto 5 -->
+        <article class="producto" id="camiseta-futurista-mujer">
+          <div class="card">
+            <img src="camiseta5.png" alt="Camiseta futurista N Mujer">
+          </div>
+          <h3>Camiseta Futurista Mujer</h3>
+          <p>Algodon 70% - Poliester 30%</p>
+          <p>$90.000 COP</p>
+          <button onclick="agregarAlCarrito('Camiseta Futurista Mujer', 90000, 'camiseta5.png')">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <!-- Producto 6 -->
+        <article class="producto" id="camiseta-premium-mujer">
+          <div class="card">
+            <img src="camiseta6.png" alt="Camiseta blanca premium N">
+          </div>
+          <h3>Camiseta Premium Mujer</h3>
+          <p>Algodon 50% Poliester 50%</p>
+          <p>$110.000 COP</p>
+          <button onclick="agregarAlCarrito('Camiseta Premium Mujer', 110000, 'camiseta6.png')">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <!-- Producto 7 -->
+        <article class="producto" id="camiseta-limitada-mujer">
+          <div class="card">
+            <img src="camiseta7.png" alt="Camiseta limitada Mujer">
+          </div>
+          <h3>Camiseta Limitada Mujer</h3>
+          <p>Algodon 100%</p>
+          <p>$130.000 COP</p>
+          <button onclick="agregarAlCarrito('Camiseta Limitada Mujer', 130000, 'camiseta7.png')">
+            Añadir al carrito
+          </button>
+        </article>
+
+        <!--Producto 8-->
+        <article class="producto" id="camisa-edicion-polo">
+          <div class="card">
+            <img src="camiseta8.png" alt="Nueva Coleccion Polo">
+          </div>
+          <h3>Camiseta Edición Polo</h3>
+          <p>Poliester 65% Algodon 35%</p>
+          <p>$160.000 COP</p>
+          <button onclick="agregarAlCarrito('Coleccion Polo Mujer', 160000, 'camiseta8.png')">
+            Añadir al carrito
+          </button>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- CHATBOT NIXBOT -->
+  <div id="chat-widget">
+    <div id="chat-toggle">
+      <img src="nix_bot_gif.gif" alt="NixBot asistente virtual">
+    </div>
+
+    <div id="chat-box">
+      <div id="chat-messages">
+        <div class="message bot">
+          <strong>NixBot:</strong> ¡Bienvenid@! Soy tu asistente de moda virtual. Espero estés muy bien 😉 <br><br>
+          Escribe <b>"Hola"</b> para iniciar tu recomendación.
+        </div>
+      </div>
+
+      <div id="chat-input">
+        <input type="text" id="user-input" placeholder="Escribe tu pregunta...">
+        <button id="send-btn">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="fin">
+    <p>&copy; 2025 Nixarion Colombia.</p>
+    <a target="_blank" href="https://www.instagram.com/nixarion_?utm_source=ig_web_button_share_sheet&igsh=cjRyNHVycGQyNHl6">
+      <img class="footer-logo" src="Instagram_libre.png" alt="Instagram" width="30" height="30">
+    </a>
+  </footer>
+
+  <!-- Script chatbot -->
+  <script src="nixbot.js" defer></script>
+</body>
+</html>

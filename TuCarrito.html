@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">      
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Carrito | Nixarion</title>
+  <meta name="description" content="Revisa los productos en tu carrito de Nixarion. Compra moda futurista y exclusiva.">
+  <meta name="keywords" content="carrito, compras, moda, ropa, Nixarion">
+  <meta name="author" content="Nixarion Colombia">
+
+  <link rel="icon" href="Nixarion_libre_blanco_16x16.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="TuCarrito.css">
+
+  <!-- Script carrito -->
+  <script src="TuCarrito.js" defer></script>      
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>
+      <a href="Inicio.html" class="titulo-link">Nixarion Ropa Exclusiva - Tu Carrito</a>
+    </h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Coleccion.html">Colección</a></li>
+        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+        <li class="carrito">
+          <a href="TuCarrito.html" class="activo">
+            <img class="carrito-logo" src="Carrito_negro.png" alt="Ver tu carrito de compras" width="40" height="40">
+            <span id="contador-carrito">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- MAIN -->
+  <main>
+    <section id="carrito">
+      <h2>💎 Tus productos 💎</h2>
+      <div id="lista-carrito">
+        <p>Tu carrito está vacío</p>
+      </div>
+
+      <div class="carrito-total">
+        <h3>Total: <span id="total-precio">$0 COP</span></h3>
+        <button id="vaciar-carrito">Vaciar carrito</button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE ENVÍO + PAGO -->
+    <section id="pago-section">
+      <h2>Datos de envío <br> Método de Pago </h2>
+
+      <form id="form-pago">
+        <fieldset class="fieldset-envio">
+          <legend>Dirección de envío</legend>
+
+          <label for="nombre-envio">Nombre completo</label>
+          <input type="text" id="nombre-envio" name="nombre-envio" placeholder="Juan P. Zapata" required>
+
+          <label for="direccion">Dirección (calle, número, apto)</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Calle 123 #45-67" required>
+
+          <label for="ciudad">Ciudad</label>
+          <input type="text" id="ciudad" name="ciudad" placeholder="Medellín" required>
+
+          <label for="departamento">Departamento / Estado</label>
+          <input type="text" id="departamento" name="departamento" placeholder="Antioquia" required>
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="3001234567" required>
+        </fieldset>
+
+        <fieldset class="fieldset-pago">
+          <legend>Pago con tarjeta (simulado)</legend>
+
+          <label for="num-tarjeta">Número de tarjeta</label>
+          <input type="text" id="num-tarjeta" name="num-tarjeta" placeholder="1111 2222 3333 4444" maxlength="19" required>
+
+          <label for="nombre-titular">Nombre del titular</label>
+          <input type="text" id="nombre-titular" name="nombre-titular" placeholder="Juan P. Zapata" required>
+
+          <label for="fecha-exp">Fecha de expiración</label>
+          <input type="text" id="fecha-exp" name="fecha-exp" placeholder="MM/AA" maxlength="5" required>
+
+          <label for="cvc">CVC</label>
+          <input type="text" id="cvc" name="cvc" placeholder="123" maxlength="3" required>
+
+          <button type="submit" id="btn-pagar">Pagar ahora</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- LOADER + MENSAJES -->
+    <div id="loader-envio" style="display:none;" class="loader">
+      <img src="camion.gif" alt="Camión en movimiento" width="150">
+      <p id="mensaje-envio" style="text-align:center; margin-top:10px;"></p>
+      <div id="barra-container">
+        <div id="barra"></div>
+      </div>
+      <p id="mensaje-final"></p>
+    </div>
+
+    <!-- FACTURA -->
+    <div id="recibo-container" style="display:none;"></div>
+  </main>
+
+  <!-- CHATBOT NIXBOT -->
+  <div id="chat-widget">
+    <div id="chat-toggle">
+      <img src="nix_bot_gif.gif" alt="NixBot asistente virtual">
+    </div>
+
+    <div id="chat-box">
+      <div id="chat-messages">
+        <div class="message bot">
+          <strong>NixBot:</strong> ¡Bienvenid@! Soy tu asistente de moda virtual. Espero estés muy bien 😉 <br><br>
+          Escribe <b>"Hola"</b> para iniciar tu recomendación.
+        </div>
+      </div>
+
+      <div id="chat-input">
+        <input type="text" id="user-input" placeholder="Escribe tu pregunta...">
+        <button id="send-btn">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="fin">
+    <p>&copy; 2025 Nixarion Colombia.</p>
+    <a target="_blank" href="https://www.instagram.com/nixarion_?utm_source=ig_web_button_share_sheet&igsh=cjRyNHVycGQyNHl6">
+      <img class="footer-logo" src="Instagram_libre.png" alt="Instagram" width="30">
+    </a> 
+  </footer>
+
+  <script src="nixbot.js" defer></script>
+</body>
+</html>

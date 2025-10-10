@@ -1,0 +1,113 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.coleccion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.producto {
+  text-align: center;
+}
+
+.producto {
+  text-align: center;
+  margin: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.producto .card img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: px;
+  border: 3px ridge #00aeff;
+  margin: 5px;
+  -webkit-box-reflect: below 2.5px linear-gradient(transparent, transparent, rgba(3, 3, 3, 0.168));
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.producto .card img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.productos-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.productos-container:hover > .producto:not(:hover) {
+  opacity: 0.3;
+}
+
+.producto h3 {
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 8px 0;
+}
+
+.producto button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+  background-color: #00b3ff;
+}
+
+/*Tallas*/
+
+.box-tallas {
+  background: #f9f9f9;
+  border: 2px solid #00aeff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 21, 255, 0.524);
+}
+
+.box-tallas h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.tallas-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.tallas-grid div {
+  background: rgb(179, 179, 179);
+  border: 1px solid #00aeff;
+  box-shadow: 0 4px 10px rgba(0, 195, 255, 0.524);
+  border-radius: 8px;
+  padding: 10px 15px;
+  min-width: 120px;
+  transition: transform 0.2s ease;
+}
+
+.tallas-grid div:hover {
+  transform: scale(1.05);
+  border-color: #5b5b5b;
+}

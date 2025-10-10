@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta Futurista",
+    "precio": 80000,
+    "color": "blanco",
+    "genero": "hombre",
+    "imagen": "camiseta1.png",
+    "link": "Coleccion.html#producto1"
+  },
+  {
+    "id": 2,
+    "nombre": "Camiseta Premium",
+    "precio": 100000,
+    "color": "negro",
+    "genero": "hombre",
+    "imagen": "camiseta2.png",
+    "link": "Coleccion.html#producto2"
+  },
+  {
+    "id": 3,
+    "nombre": "Camiseta Edición Limitada",
+    "precio": 120000,
+    "color": "blanco",
+    "genero": "hombre",
+    "imagen": "camiseta3.png",
+    "link": "Coleccion.html#producto3"
+  },
+  {
+    "id": 4,
+    "nombre": "Camiseta Edición Polo",
+    "precio": 150000,
+    "color": "oscuro",
+    "genero": "hombre",
+    "imagen": "camisa_nix.png",
+    "link": "Coleccion.html#producto4"
+  },
+  {
+    "id": 5,
+    "nombre": "Camiseta Futurista Mujer",
+    "precio": 90000,
+    "color": "blanco",
+    "genero": "mujer",
+    "imagen": "camiseta5.png",
+    "link": "Coleccion.html#producto5"
+  },
+  {
+    "id": 6,
+    "nombre": "Camiseta Premium Mujer",
+    "precio": 110000,
+    "color": "negro",
+    "genero": "mujer",
+    "imagen": "camiseta6.png",
+    "link": "Coleccion.html#producto6"
+  },
+  {
+    "id": 7,
+    "nombre": "Camiseta Limitada Mujer",
+    "precio": 130000,
+    "color": "blanco",
+    "genero": "mujer",
+    "imagen": "camiseta7.png",
+    "link": "Coleccion.html#producto7"
+  },
+  {
+    "id": 8,
+    "nombre": "Camiseta Edición Polo Mujer",
+    "precio": 160000,
+    "color": "oscuro",
+    "genero": "mujer",
+    "imagen": "camiseta8.png",
+    "link": "Coleccion.html#producto8"
+  }
+]
