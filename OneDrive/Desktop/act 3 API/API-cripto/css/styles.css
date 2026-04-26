@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(180deg, #000000cf, #ffffff, #000000cf);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.intro {
+  max-width: 600px;
+  margin: 20px auto;
+  color: #000000;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.search-box {
+  margin-top: 30px;
+}
+
+select {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+select:hover {
+  box-shadow: 0 0 12px rgba(0, 55, 255, 0.805);
+}
+
+select:focus {
+  box-shadow: 0 0 0 2px #0015ff;
+}
+
+#resultado {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.crypto-card {
+  background: linear-gradient(160deg, #7d7d7d, #333333);
+  border-radius: 20px;
+  padding: 25px;
+  width: 340px;
+  box-shadow: 0 15px 30px rgba(0, 68, 255, 0.8);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.4s ease;
+  transition: transform 0.3s ease;
+}
+
+.crypto-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.crypto-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #00ddff, #3700ff);
+}
+
+.crypto-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.crypto-header img {
+  width: 60px;
+}
+
+.crypto-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+.change-box {
+  padding: 8px 12px;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.green {
+  color: #3cff00;
+  background: rgba(77, 255, 0, 0.1);
+}
+
+.red {
+  color: #ff0000;
+  background: rgba(255, 0, 0, 0.084);
+}
+
+.crypto-extra {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
